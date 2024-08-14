@@ -1,9 +1,7 @@
 /* eslint-disable no-use-before-define */
 import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
-import houses from '../utils/student_data';
+import { houses, students, voldysArmy } from '../utils/student_data';
 
-const students = [];
-const voldysArmy = []; // starts as an empty array
 const renderToDOM = (divId, content) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = content;
